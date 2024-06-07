@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #69b6f5;
+    }
+    form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    }
+    form label {
+    display: block;
+    margin-top: 20px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+
+    form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    }
+    form input[type="checkbox"],
+    form input[type="radio"] {
+    margin-right: 10px;
+    }
+    form select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    }
+    form input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #a34caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+    background-color: #3e3f8e;
+    }
+    
+
+   
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro</title>
+<link rel="stylesheet" href="../paginas/sesion2.css">
+<script src="../paginas/sesion2.js"></script>
+</head>
+
+<body>
+   
+<form id="registration-form">
+    <h1>DATOS PERSONALES</h1>
+<label for="name">Nombre:</label>
+<input type="text" id="name" name="name" required />
+<label for="usuario">Nombre de Usuario:</label>
+<input type="usuario" id="usuario" name="usuario" required />
+<label for="contra">Contraseña:</label>
+<input type="password" id="password" name="password" placeholder="Password">
+
+<label for="message">Mensaje para ayudar a mejorar la página:</label>
+<textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+<label>
+    <input type="radio" id="gender-male" name="gender" value="male" required />
+    <span>Varon</span>
+    </label>
+    <label>
+    <input type="radio" id="gender-female" name="gender" value="female" required/>
+    <span>Mujer</span>
+
+<label>
+    <label for="country">Pais:</label>
+    <select id="country" name="country" required>
+    <option value="">Selecciona un pais</option>
+    <option value="US">Bolivia</option>
+    <option value="CA">Perú</option>
+    <option value="MX">Brasil</option>
+    <option value="US">Chile</option>
+    <option value="CA">Colombia</option>
+    <option value="MX">Ecuador</option>
+    </select>
+
+    <p>Selecciona tu edad:</p>
+    <select id="SelEdad" onchange="getEdad()">
+    <option value="18">15-18</op�on>
+    <option value="19">18-21</op�on>
+    <option value="20">23-25</op�on>
+    <option value="arriba de 20">+20</op�on>
+    </select>
+    <script>
+        function getEdad() {
+        var f = document.getElementById("SelEdad").value;
+        document.getElementById("pf").innerHTML = "La Edad seleccionada es: " + f;
+        }
+        </script>  
+        <input type="checkbox" id="terms" name="terms" required />
+        Contento con el Registro 
+    <input type="submit" value="Submit" />
+
+</label>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-image: url(../imagenes/f2.jpg);
+}
+header{
+    text-align: center;
+    background-color: rgb(21, 148, 187);
+}
+a{
+    color: rgb(24, 85, 197);
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
